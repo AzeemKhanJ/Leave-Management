@@ -1,6 +1,9 @@
 {
   "name": "attendance-erp-backend",
   "version": "1.0.0",
+  "engines": {
+  "node": "20.x"
+},
   "description": "AI Attendance Management System Backend",
   "main": "dist/app.js",
   "scripts": {
