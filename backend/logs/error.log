@@ -1,0 +1,163 @@
+[2026-07-07 05:54:38:5438] [[31merror[39m]: [31m[39m
+[31mInvalid `prisma.section.create()` invocation in[39m
+[31mC:\Users\user\OneDrive\Desktop\attendance-system\attendance-system\backend\src\repository\departmentRepository.ts:63:27[39m
+
+[31m  60 [39m
+[31m  61 // Sections[39m
+[31m  62 static async createSection(name: string) {[39m
+[31m→ 63   return prisma.section.create([39m
+[31mUnique constraint failed on the constraint: `Section_name_key` - /api/admin/sections - POST - ::1[39m
+[2026-07-08 22:30:21:3021] [[31merror[39m]: [31mInvalid credentials - /api/auth/login - POST - ::1[39m
+[2026-07-13 14:48:12:4812] [[31merror[39m]: [31m[39m
+[31mInvalid `prisma.user.findUnique()` invocation in[39m
+[31mC:\Users\user\OneDrive\Desktop\attendance-system\attendance-system\backend\src\repository\userRepository.ts:15:24[39m
+
+[31m  12 }[39m
+[31m  13 [39m
+[31m  14 static async findByUsername(username: string) {[39m
+[31m→ 15   return prisma.user.findUnique([39m
+[31mCan't reach database server at `localhost:3306`[39m
+
+[31mPlease make sure your database server is running at `localhost:3306`. - /api/auth/login - POST - ::1[39m
+[2026-07-13 14:48:22:4822] [[31merror[39m]: [31m[39m
+[31mInvalid `prisma.user.findUnique()` invocation in[39m
+[31mC:\Users\user\OneDrive\Desktop\attendance-system\attendance-system\backend\src\repository\userRepository.ts:15:24[39m
+
+[31m  12 }[39m
+[31m  13 [39m
+[31m  14 static async findByUsername(username: string) {[39m
+[31m→ 15   return prisma.user.findUnique([39m
+[31mCan't reach database server at `localhost:3306`[39m
+
+[31mPlease make sure your database server is running at `localhost:3306`. - /api/auth/login - POST - ::1[39m
+[2026-07-13 14:50:49:5049] [[31merror[39m]: [31m[39m
+[31mInvalid `prisma.user.findUnique()` invocation in[39m
+[31mC:\Users\user\OneDrive\Desktop\attendance-system\attendance-system\backend\src\repository\userRepository.ts:15:24[39m
+
+[31m  12 }[39m
+[31m  13 [39m
+[31m  14 static async findByUsername(username: string) {[39m
+[31m→ 15   return prisma.user.findUnique([39m
+[31mCan't reach database server at `localhost:3306`[39m
+
+[31mPlease make sure your database server is running at `localhost:3306`. - /api/auth/login - POST - ::1[39m
+[2026-07-13 22:27:50:2750] [[31merror[39m]: [31m[39m
+[31mInvalid `prisma.user.findUnique()` invocation in[39m
+[31mC:\Users\user\OneDrive\Desktop\attendance-system\attendance-system\backend\src\repository\userRepository.ts:15:24[39m
+
+[31m  12 }[39m
+[31m  13 [39m
+[31m  14 static async findByUsername(username: string) {[39m
+[31m→ 15   return prisma.user.findUnique([39m
+[31mCan't reach database server at `localhost:3306`[39m
+
+[31mPlease make sure your database server is running at `localhost:3306`. - /api/auth/login - POST - ::1[39m
+[2026-07-14 16:03:35:335] [[31merror[39m]: [31m[[39m
+[31m  {[39m
+[31m    "code": "too_small",[39m
+[31m    "minimum": 6,[39m
+[31m    "type": "string",[39m
+[31m    "inclusive": true,[39m
+[31m    "exact": false,[39m
+[31m    "message": "Password must be at least 6 characters",[39m
+[31m    "path": [[39m
+[31m      "password"[39m
+[31m    ][39m
+[31m  }[39m
+[31m] - /api/admin/students - POST - ::1[39m
+[2026-07-14 16:03:48:348] [[31merror[39m]: [31m[[39m
+[31m  {[39m
+[31m    "code": "too_small",[39m
+[31m    "minimum": 6,[39m
+[31m    "type": "string",[39m
+[31m    "inclusive": true,[39m
+[31m    "exact": false,[39m
+[31m    "message": "Password must be at least 6 characters",[39m
+[31m    "path": [[39m
+[31m      "password"[39m
+[31m    ][39m
+[31m  }[39m
+[31m] - /api/admin/students - POST - ::1[39m
+[2026-07-14 16:04:01:41] [[31merror[39m]: [31m[[39m
+[31m  {[39m
+[31m    "code": "too_small",[39m
+[31m    "minimum": 6,[39m
+[31m    "type": "string",[39m
+[31m    "inclusive": true,[39m
+[31m    "exact": false,[39m
+[31m    "message": "Password must be at least 6 characters",[39m
+[31m    "path": [[39m
+[31m      "password"[39m
+[31m    ][39m
+[31m  }[39m
+[31m] - /api/admin/students - POST - ::1[39m
+[2026-07-14 16:04:58:458] [[31merror[39m]: [31m[[39m
+[31m  {[39m
+[31m    "code": "too_small",[39m
+[31m    "minimum": 6,[39m
+[31m    "type": "string",[39m
+[31m    "inclusive": true,[39m
+[31m    "exact": false,[39m
+[31m    "message": "Password must be at least 6 characters",[39m
+[31m    "path": [[39m
+[31m      "password"[39m
+[31m    ][39m
+[31m  }[39m
+[31m] - /api/admin/students - POST - ::1[39m
+[2026-07-14 16:09:44:944] [[31merror[39m]: [31m[[39m
+[31m  {[39m
+[31m    "code": "too_small",[39m
+[31m    "minimum": 6,[39m
+[31m    "type": "string",[39m
+[31m    "inclusive": true,[39m
+[31m    "exact": false,[39m
+[31m    "message": "Password must be at least 6 characters",[39m
+[31m    "path": [[39m
+[31m      "password"[39m
+[31m    ][39m
+[31m  }[39m
+[31m] - /api/admin/students - POST - ::1[39m
+[2026-07-14 16:09:53:953] [[31merror[39m]: [31m[[39m
+[31m  {[39m
+[31m    "code": "too_small",[39m
+[31m    "minimum": 6,[39m
+[31m    "type": "string",[39m
+[31m    "inclusive": true,[39m
+[31m    "exact": false,[39m
+[31m    "message": "Password must be at least 6 characters",[39m
+[31m    "path": [[39m
+[31m      "password"[39m
+[31m    ][39m
+[31m  }[39m
+[31m] - /api/admin/students - POST - ::1[39m
+[2026-07-14 16:10:37:1037] [[31merror[39m]: [31m[[39m
+[31m  {[39m
+[31m    "code": "too_small",[39m
+[31m    "minimum": 6,[39m
+[31m    "type": "string",[39m
+[31m    "inclusive": true,[39m
+[31m    "exact": false,[39m
+[31m    "message": "Password must be at least 6 characters",[39m
+[31m    "path": [[39m
+[31m      "password"[39m
+[31m    ][39m
+[31m  }[39m
+[31m] - /api/admin/students - POST - ::1[39m
+[2026-07-14 16:31:04:314] [[31merror[39m]: [31m[39m
+[31mInvalid `tx.user.create()` invocation in[39m
+[31mC:\Users\user\OneDrive\Desktop\attendance-system\attendance-system\backend\src\repository\userRepository.ts:92:34[39m
+
+[31m  89   sectionId: string;[39m
+[31m  90 }) {[39m
+[31m  91   return prisma.$transaction(async (tx) => {[39m
+[31m→ 92     const user = await tx.user.create([39m
+[31mUnique constraint failed on the constraint: `User_username_key` - /api/admin/students - POST - ::1[39m
+[2026-07-14 16:33:44:3344] [[31merror[39m]: [31m[39m
+[31mInvalid `tx.user.create()` invocation in[39m
+[31mC:\Users\user\OneDrive\Desktop\attendance-system\attendance-system\backend\src\repository\userRepository.ts:30:34[39m
+
+[31m  27   departmentId: string;[39m
+[31m  28 }) {[39m
+[31m  29   return prisma.$transaction(async (tx) => {[39m
+[31m→ 30     const user = await tx.user.create([39m
+[31mUnique constraint failed on the constraint: `User_username_key` - /api/admin/teachers - POST - ::1[39m

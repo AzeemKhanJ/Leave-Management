@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+
+# Build folders
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Prisma generated files
+.prisma/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
