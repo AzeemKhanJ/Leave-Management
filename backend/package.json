@@ -5,15 +5,15 @@
   "node": "20.x"
 },
   "description": "AI Attendance Management System Backend",
-  "main": "dist/app.js",
+  "main": "dist/src/app.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/app.js",
-    "dev": "ts-node src/app.ts",
-    "prisma:generate": "prisma generate",
-    "prisma:migrate": "prisma migrate dev",
-    "prisma:seed": "ts-node prisma/seed.ts"
-  },
+  "build": "tsc",
+  "start": "node dist/src/app.js",
+  "dev": "ts-node src/app.ts",
+  "prisma:generate": "prisma generate",
+  "prisma:migrate": "prisma migrate dev",
+  "prisma:seed": "ts-node prisma/seed.ts"
+},
   "dependencies": {
     "@prisma/client": "^5.12.1",
     "bcryptjs": "^2.4.3",
