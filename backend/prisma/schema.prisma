@@ -34,6 +34,7 @@ model Department {
   classes   Class[]
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
+  @@map("department")
 }
 
 model AcademicYear {
@@ -43,6 +44,7 @@ model AcademicYear {
   semesters Semester[]
   createdAt DateTime   @default(now())
   updatedAt DateTime   @updatedAt
+  @@map("academicyear")
 }
 
 model Semester {
@@ -56,6 +58,7 @@ model Semester {
   students       Student[]
   createdAt      DateTime     @default(now())
   updatedAt      DateTime     @updatedAt
+  @@map("semester")
 }
 
 model Section {
@@ -66,6 +69,7 @@ model Section {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   @@unique([name])
+  @@map("section")
 }
 
 model Class {
@@ -84,6 +88,7 @@ model Class {
   updatedAt             DateTime               @updatedAt
 
   @@unique([departmentId, semesterId, sectionId])
+  @@map("class")
 }
 
 model Subject {
@@ -99,6 +104,7 @@ model Subject {
   attendance            Attendance[]
   createdAt             DateTime               @default(now())
   updatedAt             DateTime               @updatedAt
+  @@map("subject")
 }
 
 model Teacher {
@@ -116,6 +122,7 @@ model Teacher {
   attendance            Attendance[]
   createdAt             DateTime               @default(now())
   updatedAt             DateTime               @updatedAt
+  @@map("teacher")
 }
 
 model Student {
@@ -138,6 +145,7 @@ model Student {
   leaveRequests LeaveRequest[]
   createdAt     DateTime       @default(now())
   updatedAt     DateTime       @updatedAt
+  @@map("student")
 }
 
 model TeacherClassSubject {
@@ -152,6 +160,7 @@ model TeacherClassSubject {
   updatedAt DateTime @updatedAt
 
   @@unique([teacherId, classId, subjectId])
+  @@map("teacherclasssubject")
 }
 
 model Timetable {
@@ -168,6 +177,7 @@ model Timetable {
   updatedAt    DateTime @updatedAt
 
   @@unique([classId, dayOfWeek, periodNumber])
+  @@map("timetable")
 }
 
 model Attendance {
@@ -189,6 +199,7 @@ model Attendance {
   updatedAt    DateTime                @updatedAt
 
   @@unique([classId, subjectId, studentId, date, periodNumber])
+  @@map("attendance")
 }
 
 model AttendanceEditHistory {
@@ -201,6 +212,7 @@ model AttendanceEditHistory {
   newStatus    String
   reason       String
   timestamp    DateTime   @default(now())
+  @@map("attendanceedithistory")
 }
 
 model LeaveRequest {
@@ -218,6 +230,7 @@ model LeaveRequest {
   workflowLogs   LeaveWorkflowLog[]
   createdAt      DateTime           @default(now())
   updatedAt      DateTime           @updatedAt
+  @@map("leaverequest")
 }
 
 model LeaveWorkflowLog {
@@ -229,6 +242,7 @@ model LeaveWorkflowLog {
   updatedById    String
   updatedBy      User         @relation(fields: [updatedById], references: [id])
   timestamp      DateTime     @default(now())
+  @@map("leaveworkflowlog")
 }
 
 model Holiday {
@@ -239,6 +253,7 @@ model Holiday {
   isWorkingDay Boolean  @default(false)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
+  @@map("holiday")
 }
 
 model AuditLog {
@@ -252,4 +267,5 @@ model AuditLog {
   ipAddress   String?
   userAgent   String?
   timestamp   DateTime @default(now())
+  @@map("auditlog")
 }
