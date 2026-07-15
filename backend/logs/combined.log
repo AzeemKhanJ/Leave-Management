@@ -3578,3 +3578,4 @@
 [2026-07-15 00:53:36:5336] [[32minfo[39m]: [32mGET /api/admin/semesters - IP: ::1[39m
 [2026-07-15 00:53:36:5336] [[32minfo[39m]: [32mGET /api/admin/classes - IP: ::1[39m
 [2026-07-15 00:53:36:5336] [[32minfo[39m]: [32mGET /api/admin/sections - IP: ::1[39m
+[2026-07-15 07:52:35:5235] [[32minfo[39m]: [32mServer running in development mode on port 5000[39m
