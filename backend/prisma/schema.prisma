@@ -20,6 +20,8 @@ model User {
   attendanceEdits       AttendanceEditHistory[]
   leaveWorkflowLogs     LeaveWorkflowLog[]
   auditLogs             AuditLog[]
+
+  @@map("user")
 }
 
 model Department {
